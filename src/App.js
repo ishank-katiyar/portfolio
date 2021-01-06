@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Info from "./Body/Info.js";
+import Middle from "./Body/middle.js";
+import ASDF from "./Body/Paper.js";
+import Footer from "./Body/Footer.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<div>
+				<Info />
+			</div>
+			<div>
+				<Middle />
+			</div>
+			<div>
+				<ASDF />
+			</div>
+			<div>
+				<Footer />
+			</div>
+		</div>
+	);
 }
 
 export default App;
+
+/*
+
+https://getbootstrap.com/docs/4.0/components/alerts/
+
+<Button onClick={() => { window.open( `mailto:${MyEmail}?subject=Test_Subject&body=Test_Body`);}}>
+
+checkout this => https://learntocodewith.me/posts/portfolio-tips/ 
+*/
